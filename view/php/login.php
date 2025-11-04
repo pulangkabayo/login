@@ -13,23 +13,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <form id="loginApp">
+        <div id="loginApp" class="row">
+            <form id="loginForm">
                 <h2 id="loginHeader" class="d-flex text-align-center justify-content-center mb-4">Login</h2>
 
                 <label for="loginUsername">Username</label>
-                <input type="text" id="loginUsername" name="loginUsername" class="form-control">
+                <input type="text" id="loginUsername" name="loginUsername" class="form-control mb-3">
 
                 <label for="loginPassword">Password</label>
-                <div class="input-box">
-                    <input class="form-control" 
-                        :type="showPassword ? 'text' : 'password'" 
-                        name="loginPassword" 
-                        id="loginPassword">
-
+                <div class="input-box mb-3 position-relative">
+                    <input  :type="showPassword ? 'text' : 'password'" 
+                        class="form-control" name="loginPassword" id="loginPassword"
+                    >
                     <!-- Show eye / hide eye based on state -->
-                    <i v-if="!showPassword" @click="togglePassword" class="fa-solid fa-eye"></i>
-                    <i v-else @click="togglePassword" class="fa-solid fa-eye-slash"></i>
+                    <i v-if="showPassword" @click="togglePassword" style="right:10px; cursor:pointer;" class="fa-solid fa-eye position-absolute"></i>
+                    <i v-else @click="togglePassword" style="right:10px; cursor:pointer;" class="fa-solid fa-eye-slash position-absolute"></i>
                 </div>
 
                 <input type="submit" value="Login" class="btn btn-primary form-control mb-3">
