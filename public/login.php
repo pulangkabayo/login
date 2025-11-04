@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/login/view/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="/login/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/login/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="/login/SWAL/sweetalert2.min.css">
